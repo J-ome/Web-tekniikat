@@ -1,0 +1,25 @@
+.yellow-text{
+    color: yellow;
+}
+
+.carousel-item img {
+    margin: auto;
+    width: 20%;
+    
+}
+
+.carousel-control-prev button {
+    background-color: black;
+}
+
+.pink {
+    background: pink;
+}
+
+.blue {
+    background:rgb(96, 96, 255);
+}
+
+.green {
+    background: rgb(5, 194, 5);
+}
