@@ -12,3 +12,20 @@ function tool(num){
 numerot.forEach(function(num){console.log(num);});
 
 numerot.forEach(num => console.log(num));
+
+numerot.forEach(function(num)){
+    console.log(num);
+    console.log("toinen rivi");
+}3
+
+let uusiTaulu = numerot.map(function(num){
+    return num + 1;
+});
+
+let uusiTaulu2 = numerot.map(num => num+1);
+
+let isotNumerot = numerot.filter(num => num>5)
+
+for (n of isotNumerot) {
+    console.log(n);
+}
