@@ -1,0 +1,21 @@
+i{
+    font-size: 3em;
+}
+
+#menu{
+    background-color: blanchedalmond;
+    display: none;
+    border: 1px solid black;
+    position: absolute;
+    left: 15px;
+    top: 60px;
+
+}
+
+#menu.show{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
