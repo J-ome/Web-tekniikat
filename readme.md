@@ -1,1 +1,1 @@
-# Web-tekniikat -opintojakson koodit
+# Web-tekniikat -opintojakson koodeja
