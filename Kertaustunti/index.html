@@ -13,10 +13,31 @@
 
     <p>Tähän on luotu muuttuja SASSissa $highlight</p>
 
-    <div class="bordered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam voluptate suscipit neque? Praesentium dolorum autem culpa quos quia, alias pariatur corporis ad libero deserunt dignissimos explicabo aperiam consectetur architecto.</div>
+    <p>------------------------------------------------------------------</p>
 
-    <p class="mixin">Tähän on luotu @mixin SASSissa ja laitettu muotoilu @include theme. Sama kuin yllä olevassa divissä.</p>
+    <div class="bordered">Lorem ipsum <span class="highlight">dolor</span> sit amet consectetur adipisicing elit. Eius aliquam voluptate suscipit neque? Praesentium dolorum autem culpa quos quia, alias pariatur corporis ad libero deserunt dignissimos explicabo aperiam consectetur architecto.</div>
 
-    
+    <p>------------------------------------------------------------------</p>
+
+    <p class="mixin">Tähän on luotu @mixin SASSissa ja laitettu muotoilu @include theme. Sama kuin yllä olevassa divissä. Myös Span elementissä oleva Dolor sana muutettu väriltä ja painotukselta.</p>
+
+    <p>------------------------------------------------------------------</p>
+
+    <div class="green">Lorem ipsum <span class="highlight">dolor</span> sit amet consectetur adipisicing elit. Eius aliquam voluptate suscipit neque? Praesentium dolorum autem culpa quos quia, alias pariatur corporis ad libero deserunt dignissimos explicabo aperiam consectetur architecto.</div>
+
+    <p>------------------------------------------------------------------</p>
+
+    <div class="blue">Lorem ipsum <span class="highlight">dolor</span> sit amet consectetur adipisicing elit. Eius aliquam voluptate suscipit neque? Praesentium dolorum autem culpa quos quia, alias pariatur corporis ad libero deserunt dignissimos explicabo aperiam consectetur architecto.</div>
+
+    <p>Yllä olevassa divissä on myös @if @else lauseke jos teema sininen korostetaan dolor keltaisella, jos jotain muuta korostetaan punaisella. @else if lausekkeella dolor mustaksi jos teemaväri pinkki</p>
+
+    <p>------------------------------------------------------------------</p>
+
+<input type="text" name="name" id="name">
+<input type="button" value="Lisää osallistuja" id="addParticipantButton">
+<ul id="participantList">
+    <li>Jane Doe</li>
+</ul>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,23 +1,42 @@
 // Luodaan muuttuja
 $highlight: rgb(1, 71, 1);
-$highlight2: rgb(71, 39, 1);
+$highlight2: rgb(194, 108, 2);
 
 // Luodaan teema -mixin
-@mixin theme() {
-    color: $highlight2;
-    border: solid 2px $highlight;
+@mixin theme($themeColor: pink) {
+    color: $themeColor;
+    border: solid 4px $highlight2;
     border-radius: 2px;
     font-size: 25px;
     border-style: outset;
     box-shadow: 5px 8px 5px 0px;
+
+    .highlight {
+        //Jos teeman väri on sininen, korostetaan keltaisella
+        @if $themeColor == blue {
+        color: rgb(179, 179, 2);
+    } @else if $themeColor == pink {
+            //Jos teeman väri pinkki
+            //Korostetaan mustalla
+            color: black;
+        }
+         @else {
+        // Muuten korostetaan punaisella
+        color: rgb(114, 19, 19);
+        }
+        font-weight: bold;
+    }
 }
+
+// IF Lauseke sassissa
 
 p {
    color: $highlight;
+   font-size: large
 }
 
 .mixin {
-    @include theme;
+    @include theme ($themeColor: gold);
 }
 
 h1 {
@@ -26,4 +45,12 @@ h1 {
 
 .bordered {
    @include theme;
+}
+
+.green {
+    @include theme($themeColor: green);
+}
+
+.blue {
+    @include theme($themeColor: blue);
 }
