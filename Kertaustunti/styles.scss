@@ -1,0 +1,29 @@
+// Luodaan muuttuja
+$highlight: rgb(1, 71, 1);
+$highlight2: rgb(71, 39, 1);
+
+// Luodaan teema -mixin
+@mixin theme() {
+    color: $highlight2;
+    border: solid 2px $highlight;
+    border-radius: 2px;
+    font-size: 25px;
+    border-style: outset;
+    box-shadow: 5px 8px 5px 0px;
+}
+
+p {
+   color: $highlight;
+}
+
+.mixin {
+    @include theme;
+}
+
+h1 {
+    color: blue;
+}
+
+.bordered {
+   @include theme;
+}

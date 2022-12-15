@@ -1,0 +1,27 @@
+p {
+  color: rgb(1, 71, 1);
+}
+
+.mixin {
+  color: rgb(71, 39, 1);
+  border: solid 2px rgb(1, 71, 1);
+  border-radius: 2px;
+  font-size: 25px;
+  border-style: outset;
+  box-shadow: 5px 8px 5px 0px;
+}
+
+h1 {
+  color: blue;
+}
+
+.bordered {
+  color: rgb(71, 39, 1);
+  border: solid 2px rgb(1, 71, 1);
+  border-radius: 2px;
+  font-size: 25px;
+  border-style: outset;
+  box-shadow: 5px 8px 5px 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */
