@@ -10,14 +10,9 @@ if (month < 10) month = '0' + month;
 
 const FULLDATE = day + "." + month + "." + YEAR;
 
-
-let addNote = document.getElementById("addNote");
-
-
-
 document.getElementById("form").addEventListener("submit", makeNote);
 
-
+// eventti Formille ja noten tulostus uuteen tekstikenttään
 /**
  * @param {event} event
  */
@@ -25,30 +20,25 @@ document.getElementById("form").addEventListener("submit", makeNote);
 function makeNote(event) {
     event.preventDefault();
 
-
-
     let fData = new FormData(event.currentTarget);     
     names = fData.get("name");
     note = fData.get("note");
 
     let h4 = document.createElement("h4");
     let newDiv = document.createElement("div");
-    let button = document.createElement("button");
-    button.innerText = "Poista";
-   
-    
+    let p = document.createElement("p");
     document.querySelector(".container").appendChild(newDiv);
     newDiv.appendChild(h4);
+    newDiv.appendChild(p);
     
-
     let checkbox = document.getElementById("checkbox");
     
     newDiv.classList.add("newDiv");
     h4.classList.add("date");
-    h4.style.fontWeight = "bold";
-
+    p.classList.add("p")
     h4 = FULLDATE;
-    newDiv.innerText = "\xa0" + h4 + "\xa0" +"(" + names + ")" + "\n" + "\xa0" + note + "\xa0";
+    
+    p.innerText = "\xa0" + h4 + "\xa0" +"(" + names + ")" + "\n" + "\xa0" + note + "\xa0";
 
     
     if(checkbox.checked == true) {

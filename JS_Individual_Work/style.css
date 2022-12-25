@@ -37,9 +37,9 @@ span {
     margin-left: 5px;
 }
 
-.date {
-    font-weight: bold;
+.newDiv > h4 {
     margin: 0px;
+    font-weight: 600;
 }
 
 .addNote {
@@ -48,3 +48,6 @@ span {
     margin-bottom: 5px;
 }
 
+.p {
+    margin: 2px;
+}
