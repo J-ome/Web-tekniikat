@@ -1,0 +1,50 @@
+.container {
+    border: solid 1.5px black;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: fit-content;
+
+}
+label {
+    margin-left: 5px;
+    font-weight: bold;
+}
+.name {
+    width: 150px;
+    margin-left: 5px;
+}
+
+textarea {
+    height: 200px;
+    margin-left: 5px;
+    width: 300px
+}
+
+span {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    font-weight: bold;
+}
+
+
+.newDiv {
+    width: 90%;
+    word-wrap: break-word;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.date {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.addNote {
+    margin-left: 5px;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+

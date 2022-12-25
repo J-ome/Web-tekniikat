@@ -1,4 +1,4 @@
-xxxxxxxxxxxxxxxlet images = [
+let images = [
     "https://picsum.photos/id/1/500",
     "https://picsum.photos/id/20/500",
     "https://picsum.photos/id/45/500",
