@@ -1,0 +1,163 @@
+/* Tekijät:
+Arttu Kuismin
+Jaakko Tuokkola
+Elina Airaksinen
+Jorma Åman
+ */
+
+
+ .navbar {
+    background-color: #5E7D7B;
+    
+}
+.nav-link {
+    color: rgb(255, 255, 255)
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255)
+}
+
+body {
+    background-color: #8EBDBA;
+}
+
+/*carousellin sijainti + koko*/
+.carousel-item img{
+    margin: auto;
+    max-width: 640px;
+    max-height: 460px;
+    width: auto;
+    height: auto;
+}
+
+    /* carousellin otsikon sijainti*/
+    .carousel-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        line-height: 100%;
+            
+    }
+    .carousel-caption a{
+        width: fit-content;
+        text-decoration: none;
+    }
+    /* Karusellin otsikkoväri (placeholder)*/
+    .carouselHeader{
+        font-size: 4.5vw;
+        color: rgb(48, 64, 63);
+        -webkit-text-stroke: rgb(207,191,192) 2px;
+        text-size-adjust: fit-content;  
+    }
+
+
+
+    /* carousellin margin*/
+    #carouselExampleCaptions{
+        margin-top: 90px;
+    }
+
+    
+
+    /* <p> Karusellin tekstin väri*/
+    .infoHeader{
+        font-size: 35px;
+        color: #5E7D7B;
+        -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        
+        
+    }
+
+    /*carousel button*/
+    .carousel-control-next{
+        margin-right: 20%;
+        margin-top: 145px;
+        margin-bottom: 130px;
+        height: 460px;
+        max-height: 460px;
+        height: auto;
+    }
+    
+    /*carousel prev slide*/
+    .carousel-control-prev{
+        margin-left: 20%;
+        margin-top: 145px;
+        margin-bottom: 130px;
+        height: 460px;
+        max-height: 460px;
+        height: auto;
+    }
+
+    .carousel-control-prev-icon {
+        display: none;
+    }
+
+    .carousel-control-next-icon {
+        display: none;
+    }
+    @media (max-width:800px){
+        .carouselHeader{
+            font-size: 8vw;
+        }
+    }
+    @media(max-width:700px){
+        .carousel-item img{
+            min-width: 350px;
+            min-height: 232px ;
+        }
+        .carouselHeader{
+            font-size: 56px;
+        }
+        .carousel-control-next{
+            margin-right: 9%;
+            margin-top: 145px;
+            margin-bottom: 130px;
+            
+        }
+        .carousel-control-prev{
+            margin-left: 9%;
+            margin-top: 145px;
+            margin-bottom: 130px;
+        }
+    }
+
+/*Tietoja -sivu*/ 
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.g-col-4 {
+    padding-left: 15px;
+    width: fit-content;   
+}
+
+.card-img-top{
+    max-height: 161px;
+}
+
+#listCard {
+    margin-bottom: 5px;
+    justify-content: center; 
+}
+
+.list-group {
+    margin-left: 50px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
