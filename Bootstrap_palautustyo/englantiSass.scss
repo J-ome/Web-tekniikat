@@ -1,37 +1,57 @@
+$quizResultCardColor: #5E7D7B;
+$navTextColor: #c8c4c4;
+$hoverColor: #6c757d;
+
+@mixin button(){
+    border: solid black 1px;
+    color: black;
+}
+
+@mixin NavBackground($background: #5E7D7B) {
+    background-color: $background;
+}
+
+@mixin accordionColor($accordion: #8EBDBA) {
+    background-color: $accordion;
+}
+
+
 html, body {
     margin: 0px;
     height: 100%;
 }
+.navbar {
+    @include NavBackground
+}
+    .nav-link {
+        color: $navTextColor;
+        
+        .navbar-brand {
+            color: $navTextColor;
+            #navbar{
+                padding: 0px;
+            }
+        }
+    }
+
 
 .accordion {
     position: relative;
-}
 
-.navbar {
-    background-color: #5E7D7B;  
-}
-
-.nav-link {
-    color: rgb(200, 196, 196)
-}
-
-.navbar-brand {
-    color: rgb(200, 196, 196)
-}
-
-#navbar{
-    padding: 0px;
+    .accordion-body {
+        display: flex;
+        flex-direction: column;
+        align-content:flex-start;
+        flex-wrap: wrap;  
+    }
 }
 
 .accordion-button {
-    background-color: #8EBDBA;
+    @include accordionColor;
 }
-
-.accordion-body {
-    display: flex;
-    flex-direction: column;
-    align-content:flex-start;
-    flex-wrap: wrap;  
+.accordion-item {
+    min-height: 278px;
+    @include accordionColor;
 }
 
 span {
@@ -44,28 +64,18 @@ input {
    
 }
 
-.accordion-item {
-    min-height: 278px;
-    background-color: #8EBDBA;
-}
-
-.accordion-header {
-    background-color: #5E7D7B;
-}
-
 form {
     width: 100%;
     height: fit-content;
 }
 
 #quizNav {
-    background-color: #5E7D7B;
-    position:inherit;
+    @include NavBackground;
+    position: inherit;
 }
 
 .btn {
-    border: solid black 1px;
-    color: black;
+   @include button;
 }
 /* Visojen ja tuloskorttien näkyvyys */
 #easyQuiz {
@@ -111,7 +121,7 @@ form {
     height: fit-content;
     width: 25rem;;
     align-self: center;
-    background-color: #5E7D7B;
+    background-color: $quizResultCardColor;
     box-shadow: 1px 5px 10px 5px;
 }
 
@@ -128,7 +138,7 @@ form {
     height: fit-content;
     width: 25rem;;
     align-self: center;
-    background-color: #5E7D7B;
+    background-color: $quizResultCardColor;
     box-shadow: 1px 5px 10px 5px;
 }
 
@@ -141,7 +151,7 @@ form {
     height: fit-content;
     width: 25rem;
     align-self: center;
-    background-color: #5E7D7B;
+    background-color: $quizResultCardColor;
     box-shadow: 1px 5px 10px 5px;
 }
 
@@ -163,11 +173,11 @@ img {
     background-color: #8EBDBA;
     color: black;
 }
-
-.card-body > a:hover {
-    background-color: #6c757d;
+.card-body > a:hover{
+    background-color: $hoverColor;
     color: #fff;
 }
+
 
 /* Tervetuloa sivu ja sen näkyvyys */
 .box {
@@ -209,7 +219,7 @@ img {
         height: fit-content;
         width: 20rem;
         align-self: center;
-        background-color: #5E7D7B;
+        background-color: $quizResultCardColor;
         box-shadow: 1px 5px 10px 5px;
     }
     #mediumCard.visible{  
@@ -221,7 +231,7 @@ img {
         height: fit-content;
         width: 20rem;
         align-self: center;
-        background-color: #5E7D7B;
+        background-color: $quizResultCardColor;
         box-shadow: 1px 5px 10px 5px;
     }
     #hardCard.visible{  
@@ -233,7 +243,7 @@ img {
         height: fit-content;
         width: 20rem;
         align-self: center;
-        background-color: #5E7D7B;
+        background-color: $quizResultCardColor;
         box-shadow: 1px 5px 10px 5px;
 
     }
